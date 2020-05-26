@@ -1,0 +1,10 @@
+<div class="homepage">
+  <div class='form-upload'>
+    <%= render 'upload_form' %>
+  </div>
+
+  <div class="posts" id="posts">
+    <%= render @posts %>
+  </div>
+</div>
+<%= will_paginate @posts %>

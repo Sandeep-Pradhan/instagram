@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagram</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <%= render :partial => '/layouts/navigation' %>
+
+    <!--Main content-->
+    <main class="container" style="min-height: 500px;">
+      <%= yield %>
+    </main>
+
+    <!--Footer-->
+    <%= render :partial => '/layouts/footer' %>
+  </body>
+</html>
